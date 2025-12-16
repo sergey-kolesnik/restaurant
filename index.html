@@ -29,8 +29,8 @@
 }
     </style> -->
     <header class="header">
-        <div class="container header__container">
-            <div class="wrapper">
+        <div class="wrapper header__wrapper">
+            <div class="container header__container">
                 <div class="header__left">
                     <a href="" class="header__logo">
                         <span>
@@ -60,9 +60,9 @@
     </header>
     <main class="main">
         <section class="intro">
-            <div class="container intro__container">
-                <div class="wrapper">
-                    <h1 class="title intro__title">
+            <div class="wrapper intro__wrapper">
+                <div class="container intro__container">
+                    <h1 class="intro__title">
                         Ресторан &laquo;Эклектика&raquo;
                     </h1>
                     <button class="intro__buuton">
@@ -71,7 +71,91 @@
                 </div>
             </div>
         </section>
-        
+
+        <section class="gallery">
+            <div class="wrapper gallery__wrapper">
+                <div class="gallery__left">
+                    <img class="gallery__img" src="./assets/gallery_1.png" alt="Фото галлереи">
+                </div>
+                <div class="gallery__right">
+                    <h2 class="hallery__title title">
+                        О нас
+                    </h2>
+                    <p class="gallery__description">
+                        Ресторан &laquo;Эклектика&raquo;&nbsp;&mdash; это место, где сочетаются утонченный вкус и&nbsp;теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и&nbsp;создают блюда с&nbsp;любовью  к&nbsp;каждому клиенту. 
+                        &laquo;Эклектика&raquo; предлагает уютные залы для семейных ужинов, романтических свиданий и&nbsp;деловых обедов. Мы&nbsp;ценим ваше время и&nbsp;комфорт, поэтому обеспечиваем высокий уровень сервиса.
+                         Добро пожаловать в&nbsp;мир великолепных вкусов  и&nbsp;неповторимых воспоминаний.
+                    </p>
+                    <div class="gallery__arrows">
+                        <svg class="gallery__arrow" width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5051 1L1.50513 16.1111L18.5051 31.2222" stroke="#CDCDCD" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+
+                        <svg class="gallery__arrow" width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.00011 1L17.0557 16.1111L1.00011 31.2222" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="wrapper reviews__wrapper">
+                <svg class="reviews__arrow" width="94" height="164" viewBox="0 0 94 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M92.5039 1L1.50391 82L92.5039 163" stroke="#727272" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="container rewiews__container">
+                    <h2 class="reviews__title title">
+                        Отзывы
+                    </h2>
+                    <div class="reviews__content">
+                        <div class="reviews__left">
+                            <img src="./assets/review_1.png" alt="Фото клиента" class="rewiews__img">
+                            <h3 class="reviews__name">
+                                Наталья Иванова
+                            </h3>
+                            <div class="reviews__block-stars">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                            </div>
+                            <p class="reviews__description">
+                                Посетили семейный ресторан вместе с&nbsp;мужем и&nbsp;детьми&nbsp;&mdash; 
+                                отличное место для семейного ужина! Обстановка очень уютная, а&nbsp;обслуживание выше всяких похвал. 
+                                Наши дети в&nbsp;восторге от&nbsp;детского меню, которое оказалось не&nbsp;только вкусным, 
+                                но&nbsp;и&nbsp;заботливо подготовленным с&nbsp;учетом детских предпочтений. 
+                                Будем рекомендовать всем друзьям и&nbsp;обязательно вернемся.
+                            </p>
+                        </div>
+                        <div class="reviews__right">
+                            <img src="./assets/review_2.png" alt="Фото клиента" class="reviews__img">
+                            <h3 class="reviews__name">
+                                Александр Петров
+                            </h3>
+                            <div class="reviews__block-stars">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                                <img src="./assets/star.png" alt="Звезда" class="reviews__star">
+                            </div>
+                            <p class="reviews__description">
+                                Этот ресторан&nbsp;&mdash; настоящая находка! 
+                                Проводил здесь деловой ужин с&nbsp;партнерами, и&nbsp;все остались в&nbsp;восторге. 
+                                Обслуживание на&nbsp;высшем уровне, персонал внимателен к&nbsp;каждой детали. 
+                                Кухня порадовала своим разнообразием. Отличное место для деловых встреч и&nbsp;ужинов в&nbsp;уютной обстановке. 
+                                Рекомендую!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <svg class="reviews__arrow" width="94" height="164" viewBox="0 0 94 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L92 82L1 163" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </section>
     </main>
 </body>
 </html>
