@@ -1,3 +1,45 @@
+/* @font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+		url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    	url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+} */
+
+
+@font-face {
+    font-family: "BonaNova";
+    src: local("BonaNova Bold"),
+    url("../fonts/BonaNova-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BonaNova";
+    src: local("BonaNova Regular"),
+    url("../fonts/BonaNova-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans Bold"),
+    url("../fonts/PT_Sans-Web-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans Regular"),
+    url("../fonts/PT_Sans-Web-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -53,6 +95,7 @@ button {
     --black-color: #000000;
     --white-color: #FFFFFF;
     --active-color: #9E9E9E;
+    --button-color: #E76020;
 }
 
 .inactive {
@@ -84,6 +127,9 @@ button {
 
 .header__logo {
     color: var(--white-color);
+    font-family: "BonaNova";
+    font-weight: bold;
+    font-size: 3.70vh;
 }
 
 .nav__list {
@@ -94,4 +140,49 @@ button {
 
 .nav__item:not(:last-child) {
     margin-right: 3.96vw;
+}
+
+.nav__link {
+    color: var(--white-color);
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 1.85vh;
+}
+
+
+/* ___________________intro_____________________ */
+
+.intro__wrapper {
+    width: 100%;
+    height: 84.25vh;
+    padding-top: 18.42vh;
+    background-image: url("../assets/intro_background.png");
+
+}
+
+.intro__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.intro__title {
+    margin-bottom: 3.24vh;
+    font-family: "BonaNova";
+    font-weight: regular;
+    font-size: 8.88vh;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.intro__buuton {
+    padding: 2.03vh 3.64vw;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.56vh;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    border-radius: 10px;
 }
