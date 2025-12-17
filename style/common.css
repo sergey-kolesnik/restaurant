@@ -1,13 +1,3 @@
-/* @font-face {
-	font-family: 'Montserrat';
-	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
-		url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
-    	url('../fonts/Montserrat-SemiBold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-} */
-
-
 @font-face {
     font-family: "BonaNova";
     src: local("BonaNova Bold"),
@@ -70,6 +60,14 @@ p, h1, h2, h3, figure, figcaption {
 }
 
 
+svg {
+ overflow: hidden;
+}
+
+svg:root {
+ overflow: visible;
+}
+
 body {
 	font-family: sans-serif, Arial;
 	min-width: 320px;
@@ -96,6 +94,7 @@ button {
     --white-color: #FFFFFF;
     --active-color: #9E9E9E;
     --button-color: #E76020;
+    --size_h2_title: 2.96vh;
 }
 
 .inactive {
@@ -105,7 +104,6 @@ button {
 .container {
     width: 62.5vw;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .wrapper {
@@ -149,6 +147,10 @@ button {
     font-size: 1.85vh;
 }
 
+.nav__link--activ {
+    color: var(--active-color);
+}
+
 
 /* ___________________intro_____________________ */
 
@@ -186,3 +188,137 @@ button {
     background-color: var(--button-color);
     border-radius: 10px;
 }
+
+
+/* ____________________gallery_________________ */
+
+
+.gallery__wrapper {
+    display: flex;
+}
+
+
+.gallery__img {
+    min-width: 49.47vw;
+    min-height: 66.46vh;;
+}
+
+
+.gallery__right {
+    padding-top: 11.01vh;
+    padding-left: 9.47vw;;
+    padding-right: 14.73vw;
+}
+
+.gallery__title {
+    font-family: "BonaNova";
+    font-weight: bold;
+    font-size: var(--size_h2_title);
+}
+
+.gallery__description {
+    margin-bottom: 5.36vh;
+    font-family: "PT Sans";
+    font-weight: regular;
+    font-size: 1.66vh;
+}
+
+.gallery__arrow:last-child {
+    margin-left: 2.70vw;
+}
+
+
+/* ____________________reviewas_______________ */
+
+.reviews__wrapper {
+    width: 100%;
+    display: flex;
+    padding-left: 6.09vw;
+    padding-right: 6.09vw;
+    align-items: center;
+    background-image: url("../assets/review_back.png");
+    padding-top: 8.61vh;
+}
+
+.rewiews__container {
+     width: 73.12vw;
+}
+
+.reviews__title {
+    margin-bottom: 3.24vh;
+    font-family: "BonaNova";
+    font-weight: bold;
+    font-size: var(--size_h2_title);
+    color: var(--white-color);
+    margin-top: 3.24vh;
+}
+
+.reviews__content {
+    display: flex;
+    min-height: 100%;
+    gap: 1.82vw;
+    margin-bottom: 15.27vh;
+
+
+}
+.review__box {
+    max-width: 35.15vw;
+    min-height: 29.53vh;
+    padding-left: 2.5vw;
+    padding-top: 1.61vh;
+    padding-right: 2.86vw;
+    padding-bottom: 4.90vh;
+    display: flex;
+    background-color: var(--white-color);
+}
+
+.rewiews__img {
+    max-width: 5.41vw;
+    max-height: 9.62vh;
+    margin-right: 1.56vw;
+
+    
+}
+
+
+.review__info {
+    max-height: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reviews__block-stars {
+    display: flex;
+}
+
+
+.reviews__name, .reviews__block-stars {
+    padding-top: 1.57vh;
+    margin-bottom: 3.05vh;
+}
+
+
+.reviews__name  {
+    margin-right: 5.98vw;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.22vh;
+
+}
+
+
+.reviews__star {
+    max-width: 1.26vw;
+    max-height: 2.14vh;
+}
+
+.reviews__star:not(:last-child) {
+    margin-right: 0.40vw;
+}
+
+.reviews__description {
+    font-family: "PT Sans";
+    font-weight: regular;
+    font-size: 1.66vh;
+} 
