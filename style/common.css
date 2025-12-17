@@ -97,9 +97,16 @@ button {
     --size_h2_title: 2.96vh;
 }
 
-.inactive {
-    color: var(--active-color)
+.booking-button {
+    padding: 2.03vh 3.64vw;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.56vh;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    border-radius: 10px;
 }
+
 
 .container {
     width: 62.5vw;
@@ -179,7 +186,8 @@ button {
     text-align: center;
 }
 
-.intro__buuton {
+
+/* .intro__buuton {
     padding: 2.03vh 3.64vw;
     font-family: "PT Sans";
     font-weight: bold;
@@ -187,7 +195,7 @@ button {
     color: var(--white-color);
     background-color: var(--button-color);
     border-radius: 10px;
-}
+} */
 
 
 /* ____________________gallery_________________ */
@@ -322,3 +330,64 @@ button {
     font-weight: regular;
     font-size: 1.66vh;
 } 
+
+
+/* __________________contact_________________ */
+
+.contact__wrapper {
+    display: flex;
+}
+
+.contact__image {
+    min-width: 48.44vw;
+    min-height: 64.90vh;
+}
+
+.contact__right {
+    padding-top: 16.57vh;
+    padding-left: 9.63vw;
+}
+
+.contact__description {
+    margin-bottom: 4.63vh;
+    font-family: "PT Sans";
+    font-family: regular;
+    font-size: 2.04vh;
+}
+
+.contact__description span:first-child{
+    font-weight: bold;
+}
+
+
+/* _________________footer_________________ */
+
+
+.footer__wrapper {
+    width: 100vw;
+    height: 19.62vh;
+    background-color: var(--black-color);
+}
+
+
+.footer__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__title {
+    font-family: "BonaNova";
+    font-weight: bold;
+    font-size: 2.41vh;
+    color: var(--white-color);
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 1.04vw;
+}
