@@ -28,8 +28,8 @@
                 <div class="header__right">
                     <nav class="header__nav nav">
                         <ul class="nav__list">
-                            <li class="nav__item inactive">
-                                <a href="#" class="nav__link">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--activ">
                                     Главная
                                 </a>
                             </li>
@@ -56,7 +56,7 @@
                     <h1 class="intro__title">
                         Ресторан<br>&laquo;Эклектика&raquo;
                     </h1>
-                    <button class="intro__buuton">
+                    <button class="intro__buuton booking-button">
                         Забронировать онлайн
                     </button>
                 </div>
@@ -69,12 +69,14 @@
                     <img class="gallery__img" src="./assets/gallery_1.png" alt="Фото галлереи">
                 </div>
                 <div class="gallery__right">
-                    <h2 class="hallery__title title">
+                    <h2 class="gallery__title title">
                         О нас
                     </h2>
                     <p class="gallery__description">
-                        Ресторан &laquo;Эклектика&raquo;&nbsp;&mdash; это место, где сочетаются утонченный вкус и&nbsp;теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и&nbsp;создают блюда с&nbsp;любовью  к&nbsp;каждому клиенту. 
-                        &laquo;Эклектика&raquo; предлагает уютные залы для семейных ужинов, романтических свиданий и&nbsp;деловых обедов. Мы&nbsp;ценим ваше время и&nbsp;комфорт, поэтому обеспечиваем высокий уровень сервиса.
+                        Ресторан &laquo;Эклектика&raquo;&nbsp;&mdash; это место, где сочетаются утонченный вкус и&nbsp;теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и&nbsp;создают блюда с&nbsp;любовью  к&nbsp;каждому клиенту.<br> 
+                        <br>
+                        &laquo;Эклектика&raquo; предлагает уютные залы для семейных ужинов, романтических свиданий и&nbsp;деловых обедов. Мы&nbsp;ценим ваше время и&nbsp;комфорт, поэтому обеспечиваем высокий уровень сервиса.<br>
+                        <br>
                          Добро пожаловать в&nbsp;мир великолепных вкусов  и&nbsp;неповторимых воспоминаний.
                     </p>
                     <div class="gallery__arrows">
@@ -100,8 +102,9 @@
                         Отзывы
                     </h2>
                     <div class="reviews__content">
-                        <div class="reviews__left">
+                        <div class="review__box reviews__left ">
                             <img src="./assets/review_1.png" alt="Фото клиента" class="rewiews__img">
+                            <div class="review__info">
                             <h3 class="reviews__name">
                                 Наталья Иванова
                             </h3>
@@ -119,9 +122,12 @@
                                 но&nbsp;и&nbsp;заботливо подготовленным с&nbsp;учетом детских предпочтений. 
                                 Будем рекомендовать всем друзьям и&nbsp;обязательно вернемся.
                             </p>
+                            </div>
+
                         </div>
-                        <div class="reviews__right">
-                            <img src="./assets/review_2.png" alt="Фото клиента" class="reviews__img">
+                        <div class="review__box reviews__right">
+                            <img src="./assets/review_2.png" alt="Фото клиента" class="rewiews__img">
+                            <div class="review__info">
                             <h3 class="reviews__name">
                                 Александр Петров
                             </h3>
@@ -139,12 +145,15 @@
                                 Кухня порадовала своим разнообразием. Отличное место для деловых встреч и&nbsp;ужинов в&nbsp;уютной обстановке. 
                                 Рекомендую!
                             </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <svg class="reviews__arrow" width="94" height="164" viewBox="0 0 94 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="94" height="164" viewBox="0 0 94 164" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1L92 82L1 163" stroke="white" stroke-width="2" stroke-linecap="round"/>
                 </svg>
+
             </div>
         </section>
 
@@ -155,11 +164,19 @@
                 </div>
                 <div class="contact__right">
                     <p class="contact__description">
-                        Мы&nbsp;открыты:
-                         Пн-Чт с&nbsp;18:00 до&nbsp;23:00 Пт&nbsp;с&nbsp;17:00 до&nbsp;23:00 Сб-Вс с&nbsp;12:00 до&nbsp;23:00
-                         Москва, ул. Ленина, д.11 +7 (911) 000-00-80
+                        <span>
+                            Мы&nbsp;открыты:<br><br>
+                        </span>
+
+                        <span>
+                            Пн-Чт с&nbsp;18:00 до&nbsp;23:00<br>Пт&nbsp;с&nbsp;17:00 до&nbsp;23:00<br>Сб-Вс с&nbsp;12:00 до&nbsp;23:00<br><br>
+                        </span>
+                        <span> 
+                            Москва, ул. Ленина, д.11 +7 (911) 000-00-80
+                        </span>
+                        
                     </p>
-                    <button class="contact__button">
+                    <button class="contact__button booking-button">
                         Забронировать онлайн
                     </button>
                 </div>
@@ -175,9 +192,6 @@
                     </h2>
                 </div>
                 <div class="footer__right">
-                    <p class="footer__description">
-                        Следите за нами в соцсетях
-                    </p>
                     <ul class="footer__social">
                         <li class="footer__item">
                             <a href="" class="footer--link">
