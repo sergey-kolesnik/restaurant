@@ -1,0 +1,46 @@
+/* .header__menu {
+    margin-bottom: 9.44vh;
+} */
+
+.menu__wrapper {
+    padding-top: 9.44vh;
+    background-image: url("../assets/menu_background.png");
+}
+
+.menu__categories {
+    
+}
+
+
+.menu__button {
+    padding: 0.95vh 1.67vw;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 1.85vh;
+    color: #ffffff;
+}
+
+.menu__category:not(:first-child) {
+    margin-left: 1.04vw;
+}
+
+
+.menu__content {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4.84vw;
+}
+
+.menu__item {
+    width: calc((100% - 4.84vw)/2);
+}
+
+.menu__pictures {
+    width: 100%;
+    height: auto;
+       
+}
