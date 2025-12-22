@@ -8,7 +8,7 @@
 }
 
 .menu__categories {
-    
+    margin-bottom: 9.44vh;    
 }
 
 
@@ -20,6 +20,28 @@
     font-weight: bold;
     font-size: 1.85vh;
     color: #ffffff;
+}
+
+
+#top-menus {
+    position: relative;
+}
+
+
+#booking {
+    text-transform: uppercase;
+    padding: 1.39vh 4.58vw 1.39vh 1.72vw;
+    position: fixed;
+    color: #ffffff;
+    /* bottom: -15px; */
+    top: 19%;
+    right: 0;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.22vh;
+    background-color: #E76020;
+    border-radius: 10px 0 0 10px;
+
 }
 
 .menu__category:not(:first-child) {
@@ -42,5 +64,44 @@
 .menu__pictures {
     width: 100%;
     height: auto;
-       
+}
+
+
+.menu__description {
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.menu__description > figcaption {
+    /* 2.55vh */
+    margin-bottom: 4.72vh;
+    padding: 2.41vh 2.34vw 0 0.94vw;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+     
+}
+
+.menu__name, .menu__price {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.22vh;
+}
+
+.menu__price {
+    font-size: 2.59vh;
+}
+
+
+.menu__detailed {
+    margin: 0 0.93vw 2.59vh 0.93vh;
+    padding: 2.03vh 10.88vw;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vh;
+    border: 1px solid #E76020;
+    background-color: #E76020;
+    border-radius: 10px;
+    color: #ffffff;
+
 }
