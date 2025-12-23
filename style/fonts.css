@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "BonaNova";
+    src: local("BonaNova Bold"),
+    url("../fonts/BonaNova-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BonaNova";
+    src: local("BonaNova Regular"),
+    url("../fonts/BonaNova-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans Bold"),
+    url("../fonts/PT_Sans-Web-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans Regular"),
+    url("../fonts/PT_Sans-Web-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+}
