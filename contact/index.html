@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ресторан" />
     <title>restaurant</title>
-    <link rel="stylesheet" href="./style/normilize.css">
-    <link rel="stylesheet" href="./style/colors.css">
-    <link rel="stylesheet" href="./style/fonts.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="../style/common.css">
     <title>Contacts</title>
 </head>
 <body>
@@ -43,6 +39,72 @@
             </div>
         </div>
     </header>
+
+
+    <main class="main">
+        <section class="reservation">
+            <div class="wrapper reservation__wrapper">
+                <div class="reservation__left">
+                    
+                </div>
+                <div class="reservation__right">
+                    <h2 class="reservaaion__title">
+                        Бронирование столика в&nbsp;ресторане &laquo;Эклектика&raquo;
+                    </h2>
+                    <p class="reservation__description">
+                        Заполните форму ниже, 
+                        чтобы зарезервировать столик у&nbsp;нас в&nbsp;ресторане. 
+                        Мы&nbsp;будем ждать вас!
+                    </p>
+                    <form action="/reservation" class="reservation__form" method="POST">
+                        <input type="text" class="reservation__input" placeholder="Имя" name="name">
+                        <input type="text" class="reservation__input" placeholder="Телефон" name="phone">
+                        <input type="text" class="reservation__input" placeholder="Почта" name="email">
+                    <div class="reservation__guest">
+                        <buuton class="reservation__button-decrement">
+                            -
+                        </buuton>
+                        <input type="text" id="number-guest" value="1" disabled>
+                        <buuton class="reservation__button-increment">
+                            +
+                        </buuton>
+                        <p class="reservation__count-guest">
+                            Количество гостей
+                        </p>
+                    </div>
+                    <div class="reservation__guest">
+                        <input id="datetimepicker" type="text" name="date" placeholder="Дата и время">
+
+                    </div>
+                    <input type="text" placeholder="Пожелания" name="comments">
+                    <button type="submit">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="address">
+            <div class="wrapper address__wrapper">
+                <div class="address__left">
+
+                </div>
+                <div class="address__right">
+                    <h2 class="address__title">
+                        Мы&nbsp;ценим, что вы&nbsp;выбрали наш ресторан 
+                        и&nbsp;обещаем сделать ваш визит незабываемым!
+                    </h2>
+                    <h3 class="address__open">
+                        Мы открыты:
+                    </h3>
+                    <p class="address__description">
+                        Пн-Чт с&nbsp;18:00 до&nbsp;23:00 Пт&nbsp;с&nbsp;17:00 
+                        до&nbsp;23:00 Сб-Вс с&nbsp;12:00 до&nbsp;23:00
+                         Москва, ул. Ленина, д.11 +7 (911) 000-00-80
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="wrapper footer__wrapper">
             <div class="container footer__container">
@@ -58,22 +120,22 @@
                     <ul class="footer__social">
                         <li class="footer__item">
                             <a href="" class="footer--link">
-                                <img src="./assets/telegramm.svg" alt="" class="footer__img">
+                                <img src="../assets/telegramm.svg" alt="" class="footer__img">
                             </a>
                         </li>
                         <li class="footer__item">
                             <a href="" class="footer--link">
-                                <img src="./assets/vk.svg" alt="" class="footer__img">
+                                <img src="../assets/vk.svg" alt="" class="footer__img">
                             </a>
                         </li>
                         <li class="footer__item">
                             <a href="" class="footer--link">
-                                <img src="./assets/ya-dz.svg" alt="" class="footer__img">
+                                <img src="../assets/ya-dz.svg" alt="" class="footer__img">
                             </a>
                         </li>
                         <li class="footer__item">
                             <a href="" class="footer--link">
-                                <img src="./assets/yt.svg" alt="" class="footer__img">
+                                <img src="../assets/yt.svg" alt="" class="footer__img">
                             </a>
                         </li>
                     </ul>
